@@ -12,29 +12,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="bg-[#F9F7F3]">
+    <header class="sticky top-0 left-0 right-0 bg-white">
       <!-- navbar start -->
-      <nav class="w-10/12 mx-auto flex justify-between items-center py-6">
-        <button
-          class="text-2xl font-semibold bg-[#B4F461] py-3 px-5 rounded-lg"
-        >
-          Blog
-        </button>
-        <div class="flex items-center">
-          <img class="mr-4" src="../assets/logo.png" alt="" />
-          <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
-        </div>
-        <div class="flex items-center">
-          <img class="mr-4" src="../assets/coin.png" alt="" />
-          <!-- less-amount -->
-          <p id="less-amount" class="text-xl font-semibold">5500 BDT</p>
-        </div>
-      </nav>
-      <!-- navbar stop -->
-    </header>
-    <main class="w-10/12 mx-auto">
+      <div class="bg-[#F9F7F3]">
+        <nav class="w-10/12 mx-auto flex justify-between items-center py-6">
+          <a href="../html/question.html">
+            <button
+              id="blog-btn"
+              class="text-2xl font-semibold bg-[#B4F461] py-3 px-5 rounded-lg"
+            >
+              Blog
+            </button>
+          </a>
+          <div class="flex items-center">
+            <img class="mr-4" src="../assets/logo.png" alt="" />
+            <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+          </div>
+          <div class="flex items-center">
+            <img class="mr-4" src="../assets/coin.png" alt="" />
+            <!-- less-amount -->
+            <p id="less-amount" class="text-xl font-semibold">5500</p>
+            <span class="text-xl font-semibold ml-2">BDT</span>
+          </div>
+        </nav>
+      </div>
       <!-- Donation & History Button -->
-      <div class="flex justify-center gap-6 my-10">
+      <div class="flex justify-center gap-6 p-5">
         <button
           id="donate-div"
           class="bg-[#B4F461] py-3 px-6 font-semibold text-xl rounded-lg border"
@@ -48,11 +51,12 @@
           History
         </button>
       </div>
-
+    </header>
+    <main class="w-10/12 mx-auto">
       <!-- Card 1 -->
       <div
         id="card-info"
-        class="grid lg:grid-cols-2 gap-8 mb-20 p-5 rounded-lg border-2"
+        class="grid lg:grid-cols-2 gap-8 mb-10 mt-20 p-5 rounded-lg border-2"
       >
         <div>
           <img src="../assets/noakhali.png" alt="Album" />
@@ -60,10 +64,11 @@
         <!-- Donate text -->
         <div>
           <div
-            class="flex items-center gap-3 bg-[#1111110D] w-28 p-2 rounded-lg"
+            class="flex items-center gap-3 bg-[#1111110D] w-32 p-2 rounded-lg"
           >
             <img src="../assets/coin.png" alt="" />
-            <p id="add-taka">0</p>
+            <p id="add-taka" class="font-semibold">0</p>
+            <span class="font-semibold">BDT</span>
           </div>
           <h2 id="h2-tag" class="card-title my-4">
             Donate for Flood at Noakhali, Bangladesh
@@ -82,10 +87,6 @@
             type="text"
             placeholder="Write Donation Amount"
           />
-          <!-- <p id="income-error" class="text-red-500 text-xs mt-1 hidden">
-            ⚠️ Invalid income!
-          </p> -->
-
           <button
             id="donate-btn1"
             class="w-full bg-[#B4F461] py-3 rounded-lg text-xl font-semibold mt-6"
@@ -97,7 +98,7 @@
       <!-- card 2 -->
       <div
         id="card-info2"
-        class="grid lg:grid-cols-2 gap-8 mb-20 p-5 rounded-lg border-2"
+        class="grid lg:grid-cols-2 gap-8 mb-10 p-5 rounded-lg border-2"
       >
         <div>
           <img src="../assets/feni.png" alt="Album" />
@@ -105,16 +106,24 @@
         <!-- Donate text -->
         <div>
           <div
-            class="flex items-center gap-3 bg-[#1111110D] w-28 p-2 rounded-lg"
+            class="flex items-center gap-3 bg-[#1111110D] w-32 p-2 rounded-lg"
           >
             <img src="../assets/coin.png" alt="" />
-            <p id="add-taka2">600</p>
+            <p id="add-taka2" class="font-semibold">600</p>
+            <span class="font-semibold">BDT</span>
           </div>
           <h2 id="h2-tag2" class="card-title my-4">
             Donate for Flood Relief in Feni,Bangladesh
           </h2>
           <p>
-            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            The recent floods in Feni have devastated local communities, leading
+            to severe disruption and loss. Your generous donation will help
+            provide immediate aid, including food, clean water, and medical
+            supplies, to those affected by this calamity. Together, we can offer
+            crucial support and help rebuild lives in the aftermath of this
+            disaster. Every contribution counts towards making a real
+            difference. Please consider donating today to assist those in urgent
+            need.
           </p>
           <input
             id="input2"
@@ -133,7 +142,7 @@
       <!-- card 3 -->
       <div
         id="card-info3"
-        class="grid lg:grid-cols-2 gap-8 mb-20 p-5 rounded-lg border-2"
+        class="grid lg:grid-cols-2 gap-8 mb-10 p-5 rounded-lg border-2"
       >
         <div>
           <img src="../assets/quota-protest.png" alt="Album" />
@@ -141,16 +150,25 @@
         <!-- Donate text -->
         <div>
           <div
-            class="flex items-center gap-3 bg-[#1111110D] w-28 p-2 rounded-lg"
+            class="flex items-center gap-3 bg-[#1111110D] w-32 p-2 rounded-lg"
           >
             <img src="../assets/coin.png" alt="" />
-            <p id="add-taka3">2400</p>
+            <p id="add-taka3" class="font-semibold">2400</p>
+            <span class="font-semibold">BDT</span>
           </div>
           <h2 id="h2-tag3" class="card-title my-4">
             Aid for Injured in the Quota Movement
           </h2>
           <p>
-            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+            The recent Quota movement has resulted in numerous injuries and
+            significant hardship for many individuals. Your support is crucial
+            in providing medical assistance, rehabilitation, and necessary
+            supplies to those affected. By contributing, you help ensure that
+            injured individuals receive the care and support they need during
+            this challenging time. Every donation plays a vital role in
+            alleviating their suffering and aiding in their recovery. Please
+            consider making a donation to support these brave individuals in
+            their time of need.
           </p>
           <input
             id="input3"
@@ -171,19 +189,15 @@
         </div>
       </div>
 
-
       <!-- History add -->
-      <div
-        id="history-section"
-        class="hidden"
-      > 
+      <div id="history-section" class="hidden">
         <div id="history-items" class=""></div>
       </div>
     </main>
 
     <script src="../js/script.js"></script>
-    <script src="../js/calculate.js"></script>
+    <!-- <script src="../js/calculate.js"></script> -->
     <!-- <script src="../js/historyadd.js"></script> -->
     <script src="../js/cardinfo.js"></script>
- 
+  </body>
 </html>

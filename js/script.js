@@ -1,3 +1,15 @@
+
+// Blog btn convert to home btn
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+  
+
+})
+
+
+
+
+
 // donate btn 1
 document.getElementById("donate-btn1").addEventListener("click", function () {
   const input = parseFloat(document.getElementById("input").value);
@@ -101,6 +113,8 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
 });
 
 
+
+
 // donation & History
 const historyClicked = document.getElementById("history-btn");
 const donation = document.getElementById("donate-div");
@@ -109,10 +123,6 @@ historyClicked.addEventListener("click", function () {
   historyClicked.classList.add("bg-[#B4F461]");
 
   donation.classList.remove("bg-[#B4F461]");
-
-  /*   document.getElementById("card-info").classList.add("hidden");
-  document.getElementById("card-info2").classList.add("hidden");
-  document.getElementById("card-info3").classList.add("hidden"); */
 
   cardInfo("card-info");
   cardInfo("card-info2");
@@ -125,10 +135,6 @@ donation.addEventListener("click", function () {
   donation.classList.add("bg-[#B4F461]");
 
   historyClicked.classList.remove("bg-[#B4F461]");
-
-  /* document.getElementById("card-info").classList.remove("hidden");
-  document.getElementById("card-info2").classList.remove("hidden");
-  document.getElementById("card-info3").classList.remove("hidden"); */
 
   cardInfo2("card-info");
   cardInfo2("card-info2");
