@@ -1,4 +1,15 @@
 
+/*  // Blog to Home btn 
+ document.getElementById('blog-btn').addEventListener('click',function(){
+  document.getElementById('home-btn').innerText = 'Home'
+  window.location.href = "../html/question.html"
+})
+// home to blog btn
+ document.getElementById('home-btn').addEventListener('click',function(){
+  document.getElementById('home-btn').innerText = 'Blog'
+  window.location.href = "../html/index.html"
+})  */
+
 // donate btn 1
 document.getElementById("donate-btn1").addEventListener("click", function () {
   // calculateDonation("input", "add-taka");
@@ -104,7 +115,6 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
   `;
   document.getElementById("history-items").appendChild(historyItem);
 });
-
 
 
 // donation & History
