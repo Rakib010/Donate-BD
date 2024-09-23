@@ -1,17 +1,7 @@
 
-// Blog btn convert to home btn
-
-document.getElementById('blog-btn').addEventListener('click',function(){
-  
-
-})
-
-
-
-
-
 // donate btn 1
 document.getElementById("donate-btn1").addEventListener("click", function () {
+  // calculateDonation("input", "add-taka");
   const input = parseFloat(document.getElementById("input").value);
   const addTaka = parseFloat(document.getElementById("add-taka").innerText);
 
@@ -47,6 +37,9 @@ document.getElementById("donate-btn1").addEventListener("click", function () {
 // donate btn 2
 document.getElementById("donate-btn2").addEventListener("click", function () {
   // calculateDonation
+
+  // calculateDonation("input2","add-taka2");
+
   const input = parseFloat(document.getElementById("input2").value);
   const addTaka = parseFloat(document.getElementById("add-taka2").innerText);
 
@@ -111,7 +104,6 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
   `;
   document.getElementById("history-items").appendChild(historyItem);
 });
-
 
 
 

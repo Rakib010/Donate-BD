@@ -1,7 +1,6 @@
-
-/* function calculateDonation() {
-  const input = parseFloat(document.getElementById("input").value);
-  const addTaka = parseFloat(document.getElementById("add-taka").innerText);
+function calculateDonation(value1, value2) {
+  const input = parseFloat(document.getElementById(value1).value);
+  const addTaka = parseFloat(document.getElementById(value2).innerText);
 
   if (input <= 0 || isNaN(input)) {
     alert("Invalid Donation amount");
@@ -9,7 +8,7 @@
   }
   const newBalance = input + addTaka;
 
-  document.getElementById("add-taka").innerText = newBalance;
+  addTaka.innerText = newBalance;
 
   const lessAmount = parseFloat(
     document.getElementById("less-amount").innerText
@@ -17,7 +16,7 @@
 
   const mainBalance = lessAmount - input;
 
-  return (document.getElementById("less-amount").innerText = mainBalance);
+ return document.getElementById("less-amount").innerText = mainBalance;
 
   
-} */
+}
