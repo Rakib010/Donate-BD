@@ -1,14 +1,9 @@
-
-/*  // Blog to Home btn 
- document.getElementById('blog-btn').addEventListener('click',function(){
-  document.getElementById('home-btn').innerText = 'Home'
-  window.location.href = "../html/question.html"
-})
-// home to blog btn
- document.getElementById('home-btn').addEventListener('click',function(){
-  document.getElementById('home-btn').innerText = 'Blog'
-  window.location.href = "../html/index.html"
-})  */
+//
+// Blog to Home btn
+document.getElementById("blog-btn").addEventListener("click", function () {
+  // document.getElementById("blog-btn").innerText = "Home";
+  window.location.href = "/question.html";
+});
 
 // donate btn 1
 document.getElementById("donate-btn1").addEventListener("click", function () {
@@ -44,6 +39,9 @@ document.getElementById("donate-btn1").addEventListener("click", function () {
   
   `;
   document.getElementById("history-items").appendChild(historyItem);
+
+  //popup
+  document.getElementById("popup").classList.remove("hidden");
 });
 // donate btn 2
 document.getElementById("donate-btn2").addEventListener("click", function () {
@@ -115,7 +113,6 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
   `;
   document.getElementById("history-items").appendChild(historyItem);
 });
-
 
 // donation & History
 const historyClicked = document.getElementById("history-btn");

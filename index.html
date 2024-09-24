@@ -16,14 +16,14 @@
       <!-- navbar start -->
       <div class="bg-[#F9F7F3]">
         <nav class="w-10/12 mx-auto flex justify-between items-center py-6">
-          <a href="./question.html">
+          <!-- <a href="./question.html"> -->
           <button
             id="blog-btn"
             class="text-2xl font-semibold bg-[#B4F461] py-3 px-5 rounded-lg"
           >
             Blog
           </button>
-          </a>
+          <!-- </a> -->
           <div class="flex items-center">
             <img class="mr-4" src="./assets/logo.png" alt="" />
             <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
@@ -192,6 +192,23 @@
       <!-- History add -->
       <div id="history-section" class="hidden">
         <div id="history-items" class=""></div>
+      </div>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <div id="popup" class="hidden">
+        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </main>
 
