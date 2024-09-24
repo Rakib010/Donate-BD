@@ -12,20 +12,18 @@ document.getElementById("my_modal_5").close();
 // event listeners for the buttons
 document.getElementById("donate-btn1").addEventListener("click", function () {
   handleDonation("input", "add-taka", "h2-tag");
-
-  document.getElementById("my_modal_5").showModal();
 });
 
 document.getElementById("donate-btn2").addEventListener("click", function () {
   handleDonation("input2", "add-taka2", "h2-tag2");
 
-  document.getElementById("my_modal_5").showModal();
+  // document.getElementById("my_modal_5").showModal();
 });
 
 document.getElementById("donate-btn3").addEventListener("click", function () {
   handleDonation("input3", "add-taka3", "h2-tag3");
 
-  document.getElementById("my_modal_5").showModal();
+  // document.getElementById("my_modal_5").showModal();
 });
 
 // donation & History

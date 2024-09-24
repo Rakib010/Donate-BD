@@ -7,6 +7,7 @@ function handleDonation(inputId, addTakaId, h2TagId) {
     alert("Invalid Donation amount");
     return;
   }
+  document.getElementById("my_modal_5").showModal();
 
   const newBalance = input + addTaka;
   document.getElementById(addTakaId).innerText = newBalance;
