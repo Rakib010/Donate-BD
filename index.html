@@ -11,19 +11,17 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header class="sticky top-0 left-0 right-0 bg-white">
-      <!-- navbar start -->
-      <div class="bg-[#F9F7F3]">
-        <nav class="w-10/12 mx-auto flex justify-between items-center py-6">
-          <!-- <a href="./question.html"> -->
+  <body class="font-sans">
+    <!-- navbar start -->
+    <header class="sticky top-0 left-0 right-0 backdrop-blur-xl">
+      <div class="bg-[#ede4f3] rounded-lg">
+        <nav class="w-10/12 mx-auto flex justify-between items-center py-5">
           <button
             id="blog-btn"
             class="text-2xl font-semibold bg-[#B4F461] py-3 px-5 rounded-lg"
           >
             Blog
           </button>
-          <!-- </a> -->
           <div class="flex items-center">
             <img class="mr-4" src="./assets/logo.png" alt="" />
             <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
@@ -56,7 +54,7 @@
       <!-- Card 1 -->
       <div
         id="card-info"
-        class="grid lg:grid-cols-2 gap-8 mb-10 mt-20 p-5 rounded-lg border-2"
+        class="grid lg:grid-cols-2 gap-8 mb-10 mt-10 p-5 rounded-lg border-2"
       >
         <div>
           <img src="./assets/noakhali.png" alt="Album" />
@@ -195,7 +193,7 @@
       </div>
 
       <!-- Open the modal using ID.showModal() method -->
-      <div id="popup" class="hidden">
+      <div id="popup" class="">
         <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
@@ -213,8 +211,7 @@
     </main>
 
     <script src="./js/script.js"></script>
-    <!-- <script src="../js/calculate.js"></script> -->
-    <!-- <script src="../js/historyadd.js"></script> -->
     <script src="./js/cardinfo.js"></script>
+    <script src="./code/calculate.js"></script>
   </body>
 </html>
