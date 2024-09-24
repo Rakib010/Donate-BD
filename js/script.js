@@ -3,17 +3,21 @@ document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "question.html";
 });
 
-// event listeners for the buttons
-document.getElementById("donate-btn1").addEventListener("click", function () {
-  handleDonation("input", "add-taka", "h2-tag");
-});
+ // event listeners for the buttons parent 
+document.getElementById("donate-div").addEventListener("click", function () {
+   console.log('yo clicked')
+  // event listeners for the buttons
+  document.getElementById("donate-btn1").addEventListener("click", function () {
+    handleDonation("input", "add-taka", "h2-tag");
+  });
 
-document.getElementById("donate-btn2").addEventListener("click", function () {
-  handleDonation("input2", "add-taka2", "h2-tag2");
-});
+  document.getElementById("donate-btn2").addEventListener("click", function () {
+    handleDonation("input2", "add-taka2", "h2-tag2");
+  });
 
-document.getElementById("donate-btn3").addEventListener("click", function () {
-  handleDonation("input3", "add-taka3", "h2-tag3");
+  document.getElementById("donate-btn3").addEventListener("click", function () {
+    handleDonation("input3", "add-taka3", "h2-tag3");
+  });
 });
 
 // donation & History
