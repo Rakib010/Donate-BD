@@ -2,7 +2,7 @@
 // Blog to Home btn
 document.getElementById("blog-btn").addEventListener("click", function () {
   // document.getElementById("blog-btn").innerText = "Home";
-  window.location.href = "/Donate-BD/question.html";
+  window.location.href = "question.html";
 });
 
 // donate btn 1
